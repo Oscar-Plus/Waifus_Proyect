@@ -6,3 +6,10 @@
     height: auto;
 
 }
+#linea{
+    border-top: 4px solid black;
+}
+
+footer{
+    background-color: gray;
+}
