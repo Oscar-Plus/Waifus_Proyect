@@ -46,7 +46,7 @@ const cargarTabla = ()=>{
         let tdNom  = document.createElement("td");
         tdNom.innerText = w.nombre;
         let tdUrl  = document.createElement("td");
-        // crear imagen 
+        // Crear imagen 
         let img = new Image();
         img.classList.add("img-fluid");
         img.width = 100 ;
@@ -79,10 +79,6 @@ const cargarTabla = ()=>{
 
         let tdEdad = document.createElement("td");
         tdEdad.innerText = w.edad;
-        // validando si edad es = "":
-        if(w.edad == ""){
-            tdEdad.innerText = 0;
-        }
         // validando si es legal o nop.
         if(w.edad < 18){
             document.querySelector("#legal-no").checked = true;
